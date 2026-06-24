@@ -1,0 +1,36 @@
+{
+  "name": "Fix ZIP Filenames \u2014 runlocally",
+  "short_name": "Fix ZIP Names",
+  "description": "Repair garbled (mojibake) filenames inside a .zip, in your browser. Nothing is uploaded. Works offline.",
+  "start_url": "/zip-filename-fix/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "scope": "/zip-filename-fix/",
+  "icons": [
+    {
+      "src": "/zip-filename-fix/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/zip-filename-fix/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "productivity"
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

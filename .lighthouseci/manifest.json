@@ -1,0 +1,14 @@
+[
+  {
+    "url": "http://localhost:4321/zip-filename-fix/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/dai/Documents/cloudflare/runlocally/tools/zip-filename-fix/.lighthouseci/localhost-_zip_filename_fix_-2026_06_24_00_32_53.report.html",
+    "jsonPath": "/Users/dai/Documents/cloudflare/runlocally/tools/zip-filename-fix/.lighthouseci/localhost-_zip_filename_fix_-2026_06_24_00_32_53.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.98,
+      "best-practices": 1,
+      "seo": 1
+    }
+  }
+]
