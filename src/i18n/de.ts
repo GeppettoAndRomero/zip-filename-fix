@@ -20,6 +20,13 @@ export const de: ToolContent = {
       'Repariere den Zeichensalat in den Dateinamen einer .zip — die kaputten Namen aus einem alten Zeichensatz wie Shift_JIS / CP932. Im Browser. Nichts wird hochgeladen.',
   },
 
+  relatedNote: {
+    before:
+      'Dieses Tool korrigiert kaputte Dateinamen — es repariert keine beschädigten Archive. Zur Datenrettung aus einer kaputten oder nicht mehr zu öffnenden .zip nutze',
+    linkText: 'ZIP wiederherstellen',
+    after: '.',
+  },
+
   intro: {
     h2: 'Kaputte ZIP-Dateinamen reparieren, im Browser',
     paras: [
@@ -64,6 +71,10 @@ export const de: ToolContent = {
     {
       q: 'Wird meine .zip irgendwohin hochgeladen?',
       a: 'Nein. Das Archiv wird vollständig in deinem Browser gelesen und neu aufgebaut. Es gibt keine Serverkomponente, also gibt es für deine Datei keinen Weg vom Gerät. Der Quellcode ist offen und du kannst das im Netzwerk-Panel deines Browsers nachprüfen.',
+    },
+    {
+      q: 'Meine ZIP ist beschädigt oder lässt sich nicht öffnen — kann das hier das reparieren?',
+      a: 'Nein. Dieses Tool korrigiert nur kaputte (mojibake) Dateinamen; es repariert keine beschädigten Archive und rettet keine Dateien aus einer kaputten ZIP. Wenn sich dein Archiv nicht öffnen oder entpacken lässt, nutze für die Datenrettung ZIP wiederherstellen (runlocally.app/recover-zip/), das Dateien aus einer beschädigten .zip birgt.',
     },
     {
       q: 'Warum werden ZIP-Dateinamen zu kaputten Zeichen?',

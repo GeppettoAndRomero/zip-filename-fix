@@ -20,6 +20,13 @@ export const es: ToolContent = {
       'Repara los nombres con caracteres raros dentro de un .zip: los nombres rotos en Shift_JIS / CP932 que vienen de Windows en japonés. En tu navegador. No se sube nada.',
   },
 
+  relatedNote: {
+    before:
+      'Esta herramienta arregla nombres de archivo ilegibles; no repara archivos dañados. Para recuperar archivos de un .zip dañado o que no abre, usa',
+    linkText: 'Recuperar ZIP',
+    after: '.',
+  },
+
   intro: {
     h2: 'Arregla los nombres de archivo ilegibles de un zip, en tu navegador',
     paras: [
@@ -64,6 +71,10 @@ export const es: ToolContent = {
     {
       q: '¿Se sube mi .zip a algún sitio?',
       a: 'No. El archivo se lee y se reconstruye por completo en tu navegador. No hay ningún componente de servidor, así que tu archivo no tiene por dónde salir del dispositivo. El código es abierto y puedes confirmarlo en el panel de Red de tu navegador.',
+    },
+    {
+      q: 'Mi ZIP está dañado o no se abre — ¿esto puede arreglarlo?',
+      a: 'No. Esta herramienta solo arregla nombres de archivo ilegibles (mojibake); no repara archivos dañados ni recupera archivos de un ZIP roto. Si tu archivo no se abre o no se puede extraer, usa Recuperar ZIP (runlocally.app/recover-zip/), que rescata archivos de un .zip dañado.',
     },
     {
       q: '¿Por qué los nombres de archivo de un zip se convierten en caracteres raros?',

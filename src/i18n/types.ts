@@ -27,6 +27,13 @@ export interface ToolContent {
 
   hero: { h1: string; tagline: string };
 
+  /**
+   * 関連ツールへの短い導線を1行で描画する（before + <a>linkText</a> + after）。
+   * 壊れた/破損した .zip からのファイル復元は本ツールの範囲外で、別ツール recover-zip が担当する。
+   * href は固定で /recover-zip/（ToolPage 側でハードコード）。
+   */
+  relatedNote: { before: string; linkText: string; after: string };
+
   intro: { h2: string; paras: string[] };
 
   privacy: { h2: string; lead: string; points: string[]; note: string; sourceLinkText: string };

@@ -20,6 +20,13 @@ export const zh: ToolContent = {
       '修复 .zip 里的乱码文件名——那些来自日文 Windows 的 Shift_JIS / CP932 名称。在你的浏览器里完成。不上传任何文件。',
   },
 
+  relatedNote: {
+    before:
+      '这个工具修复的是乱码文件名，并不能修复损坏的压缩包。如果要从损坏、打不开的 .zip 里恢复文件，请使用',
+    linkText: 'ZIP 恢复',
+    after: '。',
+  },
+
   intro: {
     h2: '在浏览器里修复 zip 文件名乱码',
     paras: [
@@ -64,6 +71,10 @@ export const zh: ToolContent = {
     {
       q: '我的 .zip 会被上传到哪里吗？',
       a: '不会。压缩包完全在你的浏览器里读取和重建。这里没有服务器那一端，所以你的文件没有离开设备的路径。源代码是公开的，你可以在浏览器的网络（Network）面板里自己确认这一点。',
+    },
+    {
+      q: '我的 ZIP 损坏了、打不开——这个工具能修好吗？',
+      a: '不能。这个工具只修复乱码（mojibake）文件名，不会修复损坏的压缩包，也不会从坏掉的 ZIP 里恢复文件。如果压缩包打不开或无法解压，请使用能从损坏 .zip 中抢救文件的 ZIP 恢复（runlocally.app/recover-zip/）。',
     },
     {
       q: 'zip 文件名为什么会变成乱码？',
