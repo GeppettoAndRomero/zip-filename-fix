@@ -20,6 +20,13 @@ export const en: ToolContent = {
       'Repair mojibake filenames inside a .zip — the broken Shift_JIS / CP932 names from Japanese Windows. In your browser. Nothing is uploaded.',
   },
 
+  relatedNote: {
+    before:
+      'This tool fixes garbled filenames — it does not repair broken archives. To recover files from a corrupted or unopenable .zip, use',
+    linkText: 'Recover ZIP',
+    after: '.',
+  },
+
   intro: {
     h2: 'Fix garbled zip filenames, in your browser',
     paras: [
@@ -64,6 +71,10 @@ export const en: ToolContent = {
     {
       q: 'Is my .zip uploaded anywhere?',
       a: 'No. The archive is read and rebuilt entirely in your browser. There is no server component, so your file has no path off your device. The source is open and you can confirm this in your browser\'s Network panel.',
+    },
+    {
+      q: 'My ZIP is corrupted or will not open — can this fix it?',
+      a: 'No. This tool only fixes garbled (mojibake) filenames; it does not repair damaged archives or recover files from a broken ZIP. If your archive will not open or extract, use Recover ZIP (runlocally.app/recover-zip/), which salvages files from a corrupted .zip.',
     },
     {
       q: 'Why do zip filenames turn into garbled characters?',

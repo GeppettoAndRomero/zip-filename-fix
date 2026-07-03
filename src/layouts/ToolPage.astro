@@ -110,6 +110,11 @@ const faqLd = {
   <main class="container">
     <ConversionManager client:load locale={locale} />
 
+    <p class="related-note">
+      {c.relatedNote.before}
+      <a href="/recover-zip/">{c.relatedNote.linkText}</a>{c.relatedNote.after}
+    </p>
+
     <div class="seo-content">
       <section class="content-section">
         <h2>{c.intro.h2}</h2>
