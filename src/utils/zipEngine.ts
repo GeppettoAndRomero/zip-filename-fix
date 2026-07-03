@@ -17,6 +17,7 @@ import {
   Uint8ArrayReader,
   Uint8ArrayWriter,
 } from '@zip.js/zip.js';
+import { AppError } from './appError';
 
 const sjis = new TextDecoder('shift-jis');
 
@@ -35,7 +36,7 @@ export async function fixZipNames(file: File): Promise<FixResult> {
     const entries = await reader.getEntries();
     total = entries.length;
     for (const e of entries) {
-      if (e.encrypted) throw new Error('Encrypted archives are not supported.');
+      if (e.encrypted) throw new AppError('errEncryptedArchive');
 
       let name = e.filename;
       // Only touch names that were NOT stored as UTF-8 (else risk a double-decode).

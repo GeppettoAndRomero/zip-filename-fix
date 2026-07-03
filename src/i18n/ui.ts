@@ -36,6 +36,7 @@ export const ui = {
     errUnsupported:
       'Not a .zip file ({name}).',
     errConversionFailed: 'Conversion failed',
+    errEncryptedArchive: 'Encrypted archives are not supported.',
     errDownloadFailed: 'Download failed',
 
     // SettingsPanel
@@ -110,6 +111,7 @@ export const ui = {
     errUnsupported:
       '.zip ファイルではありません（{name}）。',
     errConversionFailed: '変換に失敗しました',
+    errEncryptedArchive: '暗号化されたアーカイブには対応していません。',
     errDownloadFailed: 'ダウンロードに失敗しました',
 
     // SettingsPanel
@@ -182,6 +184,7 @@ export const ui = {
     conversionSettings: '转换设置',
     errUnsupported: '不是 .zip 文件（{name}）。',
     errConversionFailed: '转换失败',
+    errEncryptedArchive: '不支持加密的压缩包。',
     errDownloadFailed: '下载失败',
 
     // SettingsPanel
@@ -256,6 +259,7 @@ export const ui = {
     errUnsupported:
       'Keine .zip-Datei ({name}).',
     errConversionFailed: 'Umwandlung fehlgeschlagen',
+    errEncryptedArchive: 'Verschlüsselte Archive werden nicht unterstützt.',
     errDownloadFailed: 'Download fehlgeschlagen',
 
     // SettingsPanel
@@ -328,6 +332,7 @@ export const ui = {
     conversionSettings: 'Ajustes de conversión',
     errUnsupported: 'No es un archivo .zip ({name}).',
     errConversionFailed: 'La conversión falló',
+    errEncryptedArchive: 'Los archivos cifrados no son compatibles.',
     errDownloadFailed: 'La descarga falló',
 
     // SettingsPanel

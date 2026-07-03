@@ -8,6 +8,7 @@ import { useState, useEffect, useCallback } from 'preact/hooks';
 import { AppCard } from './AppCard';
 import { ErrorToast } from './ErrorToast';
 import { fixZipNames } from '@/utils/zipEngine';
+import { resolveErrorMessage } from '@/utils/appError';
 import { ui } from '@/i18n/ui';
 
 interface ErrorToastItem {
@@ -54,12 +55,12 @@ export function ConversionManager({ locale = 'en' }: ConversionManagerProps) {
         a.remove();
         URL.revokeObjectURL(url);
       } catch (error) {
-        showErrorToast(`${file.name}: ${error instanceof Error ? error.message : 'Failed'}`);
+        showErrorToast(`${file.name}: ${resolveErrorMessage(error, t)}`);
       } finally {
         setBusy(false);
       }
     },
-    [busy, showErrorToast]
+    [busy, showErrorToast, t]
   );
 
   const handleFiles = useCallback(
